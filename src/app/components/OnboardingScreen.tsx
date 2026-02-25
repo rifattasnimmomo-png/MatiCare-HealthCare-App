@@ -5,7 +5,7 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
 import { Checkbox } from './ui/checkbox';
-import logoImage from 'figma:asset/bcc859c9fd4b4782cb3a85be753384def38388e9.png';
+import logoImage from '../../assets/bcc859c9fd4b4782cb3a85be753384def38388e9.png';
 
 interface OnboardingScreenProps {
   onComplete: (userName: string, pregnancyWeek: number) => void;

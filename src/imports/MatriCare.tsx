@@ -1,7 +1,7 @@
 import svgPaths from "./svg-fb67ctbup0";
-import imgScreenshot202602070255361 from "figma:asset/0d9085c0acef3bfb5e633b5d2cadbf903ca6d6c2.png";
-import imgScreenshot202602070255401 from "figma:asset/28994158843e9c89f9b49b01c5de0dfc7b7ea546.png";
-import imgScreenshot202602070255451 from "figma:asset/ed221c04e294e56bd6f8cf34f0d2c89f124919a9.png";
+import imgScreenshot202602070255361 from "../assets/0d9085c0acef3bfb5e633b5d2cadbf903ca6d6c2.png";
+import imgScreenshot202602070255401 from "../assets/28994158843e9c89f9b49b01c5de0dfc7b7ea546.png";
+import imgScreenshot202602070255451 from "../assets/ed221c04e294e56bd6f8cf34f0d2c89f124919a9.png";
 
 function Time() {
   return (

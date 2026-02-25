@@ -1,5 +1,5 @@
 import { Heart, Calendar, CreditCard, MessageCircle, LogOut, ChevronRight, Users, Phone, Shield, Settings, HelpCircle, Info } from 'lucide-react';
-import imgProfilePic from 'figma:asset/ae6119de08332fcb400dc466573e6c84a2e3c7c7.png';
+import imgProfilePic from '../../assets/ae6119de08332fcb400dc466573e6c84a2e3c7c7.png';
 
 interface MoreScreenProps {
   onNavigate: (screen: string) => void;
