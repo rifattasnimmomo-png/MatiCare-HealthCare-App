@@ -3,9 +3,10 @@ import imgProfilePic from '../../assets/ae6119de08332fcb400dc466573e6c84a2e3c7c7
 
 interface MoreScreenProps {
   onNavigate: (screen: string) => void;
+  userName?: string;
 }
 
-export function MoreScreen({ onNavigate }: MoreScreenProps) {
+export function MoreScreen({ onNavigate, userName }: MoreScreenProps) {
   const menuItems = [
     {
       id: 'partner',
@@ -57,7 +58,7 @@ export function MoreScreen({ onNavigate }: MoreScreenProps) {
               className="w-full h-full object-cover"
             />
           </div>
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-1">Ruchita</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-1">{userName || "User"}</h2>
         </div>
       </div>
 

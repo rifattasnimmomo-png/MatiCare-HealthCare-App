@@ -270,7 +270,7 @@ function AppContent({
           <FetalHealthScreen onBack={() => setActiveTab('home')} />
         )}
         {activeTab === 'reports' && <ReportsAndAppointments />}
-        {activeTab === 'more' && <MoreScreen onNavigate={handleMoreNavigate} />}
+        {activeTab === 'more' && <MoreScreen onNavigate={handleMoreNavigate} userName={userName} />}
       </div>
 
       {/* Floating AI Assistant Button */}
