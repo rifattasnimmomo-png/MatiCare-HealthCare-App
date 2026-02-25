@@ -11,7 +11,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
   return (
     <div className="bg-gradient-to-b from-pink-50 dark:from-gray-900 to-white dark:to-gray-900 min-h-screen pb-24">
       {/* Header */}
-      <div className="bg-gradient-to-br from-[#FF69B4] via-[#FF8CD9] to-[#E85AA9] px-6 pt-12 pb-8 rounded-b-3xl shadow-lg">
+      <div className="bg-gradient-to-br from-[#FFC0CB] via-[#FFD1DC] to-[#FFB6C1] px-6 pt-12 pb-8 rounded-b-3xl shadow-lg">
         <button
           onClick={onBack}
           className="flex items-center gap-2 text-white mb-6"
@@ -35,12 +35,12 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
         <Card className="border-none shadow-md bg-gradient-to-br from-pink-50 dark:from-pink-900/20 to-pink-100 dark:to-pink-900/30">
           <CardContent className="p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#FFC0CB] to-[#FFB6C1] rounded-full flex items-center justify-center">
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <div>
                 <h3 className="text-gray-800 dark:text-white font-semibold">Security Status</h3>
-                <Badge className="bg-[#FF69B4] text-white text-xs border-none mt-1">Protected</Badge>
+                <Badge className="bg-[#FFC0CB] text-white text-xs border-none mt-1">Protected</Badge>
               </div>
             </div>
             <p className="text-sm text-gray-700 dark:text-gray-300">
@@ -58,7 +58,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFC0CB] to-[#FFB6C1] rounded-xl flex items-center justify-center">
                     <Fingerprint className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -66,7 +66,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
                     <p className="text-xs text-gray-600 dark:text-gray-400">Fingerprint or Face ID</p>
                   </div>
                 </div>
-                <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
+                <div className="w-12 h-6 bg-[#FFC0CB] rounded-full flex items-center justify-end px-1">
                   <div className="w-4 h-4 bg-white rounded-full" />
                 </div>
               </div>
@@ -77,7 +77,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFC0CB] to-[#FFB6C1] rounded-xl flex items-center justify-center">
                     <Key className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -96,7 +96,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFC0CB] to-[#FFB6C1] rounded-xl flex items-center justify-center">
                     <Lock className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -104,7 +104,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
                     <p className="text-xs text-gray-600 dark:text-gray-400">Lock after 5 minutes</p>
                   </div>
                 </div>
-                <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
+                <div className="w-12 h-6 bg-[#FFC0CB] rounded-full flex items-center justify-end px-1">
                   <div className="w-4 h-4 bg-white rounded-full" />
                 </div>
               </div>
@@ -121,7 +121,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFC0CB] to-[#FFB6C1] rounded-xl flex items-center justify-center">
                     <Database className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -129,7 +129,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
                     <p className="text-xs text-gray-600 dark:text-gray-400">AES-256 encryption</p>
                   </div>
                 </div>
-                <Badge className="bg-[#FF69B4] text-white text-xs border-none">Active</Badge>
+                <Badge className="bg-[#FFC0CB] text-white text-xs border-none">Active</Badge>
               </div>
             </CardContent>
           </Card>
@@ -138,7 +138,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFC0CB] to-[#FFB6C1] rounded-xl flex items-center justify-center">
                     <Eye className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -146,7 +146,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
                     <p className="text-xs text-gray-600 dark:text-gray-400">Help improve the app</p>
                   </div>
                 </div>
-                <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
+                <div className="w-12 h-6 bg-[#FFC0CB] rounded-full flex items-center justify-end px-1">
                   <div className="w-4 h-4 bg-white rounded-full" />
                 </div>
               </div>
@@ -157,7 +157,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFC0CB] to-[#FFB6C1] rounded-xl flex items-center justify-center">
                     <Share2 className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -165,7 +165,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
                     <p className="text-xs text-gray-600 dark:text-gray-400">Control who sees your data</p>
                   </div>
                 </div>
-                <Button variant="outline" size="sm" className="text-xs border-[#FF69B4] text-[#FF69B4]">
+                <Button variant="outline" size="sm" className="text-xs border-[#FFC0CB] text-[#FFC0CB]">
                   Manage
                 </Button>
               </div>
@@ -178,7 +178,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
       <div className="px-6 mb-6">
         <h2 className="text-lg text-gray-800 dark:text-white font-semibold mb-4">Account Actions</h2>
         <div className="space-y-3">
-          <Button className="w-full bg-gradient-to-r from-[#FF69B4] to-[#E85AA9] hover:from-[#E85AA9] hover:to-[#FF69B4] text-white h-12 rounded-xl">
+          <Button className="w-full bg-gradient-to-r from-[#FFC0CB] to-[#FFB6C1] hover:from-[#FFB6C1] hover:to-[#FFC0CB] text-white h-12 rounded-xl">
             <Database className="w-5 h-5 mr-2" />
             Download My Data
           </Button>
@@ -212,7 +212,7 @@ export function PrivacySecurityScreen({ onBack }: PrivacySecurityScreenProps) {
                 • You can request data deletion at any time
               </p>
             </div>
-            <Button variant="link" className="text-[#FF69B4] mt-3 px-0">
+            <Button variant="link" className="text-[#FFC0CB] mt-3 px-0">
               Read Full Privacy Policy →
             </Button>
           </CardContent>

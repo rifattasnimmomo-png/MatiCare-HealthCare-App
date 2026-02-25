@@ -27,7 +27,7 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
               onClick={() => onTabChange(tab.id)}
               className={`flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all ${
                 isActive 
-                  ? 'text-[#FF69B4] bg-pink-50 dark:bg-pink-900/30' 
+                  ? 'text-[#FFC0CB] bg-pink-50 dark:bg-pink-900/30' 
                   : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
               }`}
             >
@@ -49,7 +49,7 @@ export function FloatingAssistantButton({ onClick }: FloatingAssistantButtonProp
   return (
     <button
       onClick={onClick}
-      className="fixed bottom-28 right-6 w-14 h-14 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-full shadow-lg flex items-center justify-center hover:shadow-xl transition-all z-40"
+      className="fixed bottom-28 right-6 w-14 h-14 bg-gradient-to-br from-[#FFC0CB] to-[#FFB6C1] rounded-full shadow-lg flex items-center justify-center hover:shadow-xl transition-all z-40"
     >
       <MessageCircle className="w-6 h-6 text-white" />
     </button>

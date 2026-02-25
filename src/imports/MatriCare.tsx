@@ -89,7 +89,7 @@ function Droplet() {
     <div className="absolute left-[45px] size-[12px] top-[422px]" data-name="Droplet">
       <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12 12">
         <g id="Droplet">
-          <path d={svgPaths.p16e7ca00} id="Icon" stroke="var(--stroke-0, #FF69B4)" strokeLinecap="round" strokeLinejoin="round" />
+          <path d={svgPaths.p16e7ca00} id="Icon" stroke="var(--stroke-0, #FFC0CB)" strokeLinecap="round" strokeLinejoin="round" />
         </g>
       </svg>
     </div>

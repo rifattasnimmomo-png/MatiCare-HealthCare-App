@@ -14,7 +14,7 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
   return (
     <div className="bg-gradient-to-b from-pink-50 dark:from-gray-900 to-white dark:to-gray-900 min-h-screen pb-24">
       {/* Header */}
-      <div className="bg-gradient-to-br from-[#FF69B4] via-[#FF8CD9] to-[#E85AA9] px-6 pt-12 pb-8 rounded-b-3xl shadow-lg">
+      <div className="bg-gradient-to-br from-[#FFC0CB] via-[#FFD1DC] to-[#FFB6C1] px-6 pt-12 pb-8 rounded-b-3xl shadow-lg">
         <button onClick={onBack} className="flex items-center gap-2 text-white mb-6">
           <ArrowLeft className="w-5 h-5" />
           <span>Back</span>
@@ -38,21 +38,21 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="w-12 h-12 bg-gradient-to-br from-pink-100 dark:from-pink-900/30 to-pink-50 dark:to-pink-900/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Pill className="w-6 h-6 text-[#FF69B4]" />
+                  <Pill className="w-6 h-6 text-[#FFC0CB]" />
                 </div>
                 <p className="text-2xl text-gray-800 dark:text-white font-semibold mb-1">2/2</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400">Supplements</p>
               </div>
               <div>
                 <div className="w-12 h-12 bg-gradient-to-br from-pink-100 dark:from-pink-900/30 to-pink-50 dark:to-pink-900/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Droplet className="w-6 h-6 text-[#FF69B4]" />
+                  <Droplet className="w-6 h-6 text-[#FFC0CB]" />
                 </div>
                 <p className="text-2xl text-gray-800 dark:text-white font-semibold mb-1">6/8</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400">Water (glasses)</p>
               </div>
               <div>
                 <div className="w-12 h-12 bg-gradient-to-br from-pink-100 dark:from-pink-900/30 to-pink-50 dark:to-pink-900/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Apple className="w-6 h-6 text-[#FF69B4]" />
+                  <Apple className="w-6 h-6 text-[#FFC0CB]" />
                 </div>
                 <p className="text-2xl text-gray-800 dark:text-white font-semibold mb-1">3/3</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400">Meals logged</p>
@@ -66,7 +66,7 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
       <div className="px-6 mb-6">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg text-gray-800 dark:text-white font-semibold">Supplements & Medications</h2>
-          <button className="text-sm text-[#FF69B4] hover:text-[#E85AA9]">+ Add</button>
+          <button className="text-sm text-[#FFC0CB] hover:text-[#FFB6C1]">+ Add</button>
         </div>
 
         <div className="space-y-3">
@@ -74,13 +74,13 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
             <CardContent className="p-4">
               <div className="flex items-start justify-between">
                 <div className="flex items-start gap-3 flex-1">
-                  <div className="w-10 h-10 bg-[#FF69B4] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#FFC0CB] rounded-lg flex items-center justify-center flex-shrink-0">
                     <Check className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <h3 className="text-gray-900 dark:text-white mb-1">Prenatal Multivitamin</h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">1 tablet • Once daily with breakfast</p>
-                    <Badge className="bg-[#FF69B4] text-white text-xs">Taken at 8:30 AM</Badge>
+                    <Badge className="bg-[#FFC0CB] text-white text-xs">Taken at 8:30 AM</Badge>
                   </div>
                 </div>
               </div>
@@ -91,13 +91,13 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
             <CardContent className="p-4">
               <div className="flex items-start justify-between">
                 <div className="flex items-start gap-3 flex-1">
-                  <div className="w-10 h-10 bg-[#FF69B4] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#FFC0CB] rounded-lg flex items-center justify-center flex-shrink-0">
                     <Check className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <h3 className="text-gray-900 dark:text-white mb-1">Folic Acid</h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">400 mcg • Once daily</p>
-                    <Badge className="bg-[#FF69B4] text-white text-xs">Taken at 8:30 AM</Badge>
+                    <Badge className="bg-[#FFC0CB] text-white text-xs">Taken at 8:30 AM</Badge>
                   </div>
                 </div>
               </div>
@@ -109,7 +109,7 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
               <div className="flex items-start justify-between">
                 <div className="flex items-start gap-3 flex-1">
                   <div className="w-10 h-10 bg-pink-100 dark:bg-pink-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Pill className="w-5 h-5 text-[#FF69B4]" />
+                    <Pill className="w-5 h-5 text-[#FFC0CB]" />
                   </div>
                   <div>
                     <h3 className="text-gray-900 dark:text-white mb-1">Iron Supplement</h3>
@@ -133,7 +133,7 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
           <CardContent className="p-5">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
-                <Droplet className="w-6 h-6 text-[#FF69B4]" />
+                <Droplet className="w-6 h-6 text-[#FFC0CB]" />
                 <div>
                   <p className="text-gray-900 dark:text-white">6 of 8 glasses</p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">1,500 ml / 2,000 ml</p>
@@ -145,11 +145,11 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
             <Progress value={75} className="mb-4 h-3" />
 
             <div className="flex gap-2">
-              <Button className="flex-1 bg-[#FF69B4] hover:bg-[#E85AA9] text-white">
+              <Button className="flex-1 bg-[#FFC0CB] hover:bg-[#FFB6C1] text-white">
                 <Plus className="w-4 h-4 mr-1" />
                 Add Glass
               </Button>
-              <Button variant="outline" className="border-[#FF69B4] text-[#FF69B4]">
+              <Button variant="outline" className="border-[#FFC0CB] text-[#FFC0CB]">
                 <Droplet className="w-4 h-4" />
               </Button>
             </div>
@@ -167,30 +167,30 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
         <Card className="border-none bg-gradient-to-br from-pink-50 dark:from-pink-900/20 to-pink-100 dark:to-pink-900/30">
           <CardContent className="p-5">
             <div className="flex items-start gap-3 mb-4">
-              <Apple className="w-6 h-6 text-[#FF69B4] flex-shrink-0" />
+              <Apple className="w-6 h-6 text-[#FFC0CB] flex-shrink-0" />
               <div>
                 <h3 className="text-gray-900 dark:text-white mb-2">Focus Nutrients</h3>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#FF69B4] rounded-full" />
+                    <div className="w-2 h-2 bg-[#FFC0CB] rounded-full" />
                     <span className="text-sm text-gray-700 dark:text-gray-300">
                       <strong>Iron:</strong> Red meat, spinach, lentils
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#FF69B4] rounded-full" />
+                    <div className="w-2 h-2 bg-[#FFC0CB] rounded-full" />
                     <span className="text-sm text-gray-700 dark:text-gray-300">
                       <strong>Calcium:</strong> Milk, yogurt, cheese
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#FF69B4] rounded-full" />
+                    <div className="w-2 h-2 bg-[#FFC0CB] rounded-full" />
                     <span className="text-sm text-gray-700 dark:text-gray-300">
                       <strong>Protein:</strong> Fish, eggs, beans, nuts
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#FF69B4] rounded-full" />
+                    <div className="w-2 h-2 bg-[#FFC0CB] rounded-full" />
                     <span className="text-sm text-gray-700 dark:text-gray-300">
                       <strong>Omega-3:</strong> Salmon, walnuts, flaxseed
                     </span>
@@ -212,7 +212,7 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
       <div className="px-6 mb-6">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg text-gray-800 dark:text-white font-semibold">Today's Meals</h2>
-          <button className="text-sm text-[#FF69B4] hover:text-[#E85AA9]">+ Add meal</button>
+          <button className="text-sm text-[#FFC0CB] hover:text-[#FFB6C1]">+ Add meal</button>
         </div>
 
         <div className="space-y-3">
@@ -275,7 +275,7 @@ export function DailyHealthScreen({ onBack }: DailyHealthScreenProps) {
         <Card className="border-pink-200 dark:border-pink-800 bg-pink-50 dark:bg-pink-900/20">
           <CardContent className="p-5">
             <div className="flex items-center gap-3 mb-4">
-              <Moon className="w-6 h-6 text-[#FF69B4]" />
+              <Moon className="w-6 h-6 text-[#FFC0CB]" />
               <div>
                 <p className="text-gray-900 dark:text-white">Last night's sleep</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">7.5 hours</p>

@@ -29,7 +29,7 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
 
   return (
     <div className="bg-white dark:bg-gray-900 relative w-full min-h-[1200px] overflow-auto pb-24" data-name="Matri Care">
-      <div className="absolute bg-[#FF69B4] h-[380px] left-0 rounded-[34px] top-[-100px] w-full" />
+      <div className="absolute bg-[#FFC0CB] h-[380px] left-0 rounded-[34px] top-[-100px] w-full" />
       
       <StatusBar />
       
@@ -95,12 +95,12 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
         </div>
         
         {/* Pink status box */}
-        <div className="absolute bg-[#FFE6F7] dark:bg-pink-900/30 h-[91px] left-[17px] rounded-[14px] top-[58px] right-[17px]" />
+        <div className="absolute bg-[#FFE4E9] dark:bg-pink-900/30 h-[91px] left-[17px] rounded-[14px] top-[58px] right-[17px]" />
         
         {/* Pink circle with activity icon */}
         <div className="absolute left-[26px] size-[35px] top-[85px]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 35 35">
-            <circle cx="17.5" cy="17.5" fill="var(--fill-0, #FF69B4)" r="17.5" />
+            <circle cx="17.5" cy="17.5" fill="var(--fill-0, #FFC0CB)" r="17.5" />
           </svg>
         </div>
         <div className="absolute h-[16px] left-[31px] top-[95px] w-[25px]">
@@ -127,7 +127,7 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
         </div>
         <div className="absolute left-[28px] size-[12px] top-[206px]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12 12">
-            <path d={svgPaths.p16e7ca00} stroke="var(--stroke-0, #FF69B4)" strokeLinecap="round" strokeLinejoin="round" />
+            <path d={svgPaths.p16e7ca00} stroke="var(--stroke-0, #FFC0CB)" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
         <div className="absolute left-[29px] size-[11px] top-[240px]">
@@ -165,25 +165,25 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
         
         {/* Normal Badges */}
         <div className="absolute right-[14px] top-[172px]">
-          <div className="bg-[#FF69B4] h-[10px] rounded-[2px] w-[45px]" />
+          <div className="bg-[#FFC0CB] h-[10px] rounded-[2px] w-[45px]" />
           <div className="-translate-y-1/2 absolute flex flex-col font-['Instrument_Sans',sans-serif] font-normal justify-center leading-[0] left-[7px] text-[8px] text-white top-[50%] tracking-[0.4px] w-[30px]">
             <p className="leading-[1.4] whitespace-pre-wrap">Normal</p>
           </div>
         </div>
         <div className="absolute right-[14px] top-[206px]">
-          <div className="bg-[#FF69B4] h-[10px] rounded-[2px] w-[45px]" />
+          <div className="bg-[#FFC0CB] h-[10px] rounded-[2px] w-[45px]" />
           <div className="-translate-y-1/2 absolute flex flex-col font-['Instrument_Sans',sans-serif] font-normal justify-center leading-[0] left-[7px] text-[8px] text-white top-[50%] tracking-[0.4px] w-[30px]">
             <p className="leading-[1.4] whitespace-pre-wrap">Normal</p>
           </div>
         </div>
         <div className="absolute right-[14px] top-[239px]">
-          <div className="bg-[#FF69B4] h-[10px] rounded-[2px] w-[45px]" />
+          <div className="bg-[#FFC0CB] h-[10px] rounded-[2px] w-[45px]" />
           <div className="-translate-y-1/2 absolute flex flex-col font-['Instrument_Sans',sans-serif] font-normal justify-center leading-[0] left-[7px] text-[8px] text-white top-[50%] tracking-[0.4px] w-[30px]">
             <p className="leading-[1.4] whitespace-pre-wrap">Normal</p>
           </div>
         </div>
         <div className="absolute right-[14px] top-[274px]">
-          <div className="bg-[#FF69B4] h-[10px] rounded-[2px] w-[45px]" />
+          <div className="bg-[#FFC0CB] h-[10px] rounded-[2px] w-[45px]" />
           <div className="-translate-y-1/2 absolute flex flex-col font-['Instrument_Sans',sans-serif] font-normal justify-center leading-[0] left-[7px] text-[8px] text-white top-[50%] tracking-[0.4px] w-[30px]">
             <p className="leading-[1.4] whitespace-pre-wrap">Normal</p>
           </div>
@@ -203,19 +203,19 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
         {/* Food & Supplements Icons */}
         <div className="absolute left-[40px] top-[65px] flex flex-col items-center gap-1">
           <div className="w-14 h-14 bg-pink-100 dark:bg-pink-900/30 rounded-full flex items-center justify-center">
-            <Pill className="w-7 h-7 text-[#FF69B4]" />
+            <Pill className="w-7 h-7 text-[#FFC0CB]" />
           </div>
           <span className="text-xs text-gray-600 dark:text-gray-400">Pills</span>
         </div>
         <div className="absolute left-1/2 -translate-x-1/2 top-[65px] flex flex-col items-center gap-1">
           <div className="w-14 h-14 bg-pink-100 dark:bg-pink-900/30 rounded-full flex items-center justify-center">
-            <Droplet className="w-7 h-7 text-[#FF69B4]" />
+            <Droplet className="w-7 h-7 text-[#FFC0CB]" />
           </div>
           <span className="text-xs text-gray-600 dark:text-gray-400">Water</span>
         </div>
         <div className="absolute right-[40px] top-[65px] flex flex-col items-center gap-1">
           <div className="w-14 h-14 bg-pink-100 dark:bg-pink-900/30 rounded-full flex items-center justify-center">
-            <Utensils className="w-7 h-7 text-[#FF69B4]" />
+            <Utensils className="w-7 h-7 text-[#FFC0CB]" />
           </div>
           <span className="text-xs text-gray-600 dark:text-gray-400">Meals</span>
         </div>
@@ -232,7 +232,7 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
         {/* Calendar Icon */}
         <div className="absolute left-[16px] size-[25px] top-[25px]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 25 25">
-            <path d={svgPaths.p1166480} stroke="var(--stroke-0, #FF69B4)" strokeLinecap="round" strokeLinejoin="round" />
+            <path d={svgPaths.p1166480} stroke="var(--stroke-0, #FFC0CB)" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
         
@@ -256,7 +256,7 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
         {/* Timeline dots and lines */}
         <div className="absolute left-[25px] size-[7px] top-[83px]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7 7">
-            <circle cx="3.5" cy="3.5" fill="var(--fill-0, #FF69B4)" r="3" stroke="var(--stroke-0, #FF69B4)" />
+            <circle cx="3.5" cy="3.5" fill="var(--fill-0, #FFC0CB)" r="3" stroke="var(--stroke-0, #FFC0CB)" />
           </svg>
         </div>
         
@@ -270,7 +270,7 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
           <div className="flex-none rotate-[0.87deg]">
             <div className="h-[33.004px] relative w-0">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1 34.0038">
-                <path d="M0.5 0.5V33.5038" stroke="var(--stroke-0, #FF69B4)" strokeLinecap="round" />
+                <path d="M0.5 0.5V33.5038" stroke="var(--stroke-0, #FFC0CB)" strokeLinecap="round" />
               </svg>
             </div>
           </div>
@@ -292,7 +292,7 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
         <div className="size-[28px]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 28 28">
             <g>
-              <circle cx="14" cy="14" fill="var(--fill-0, #FF69B4)" r="14" />
+              <circle cx="14" cy="14" fill="var(--fill-0, #FFC0CB)" r="14" />
               <path d={svgPaths.p19976ec0} stroke="var(--stroke-0, white)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
             </g>
           </svg>

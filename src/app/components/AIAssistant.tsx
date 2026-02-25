@@ -88,7 +88,7 @@ export function AIAssistant() {
   return (
     <div className="bg-slate-50 dark:bg-gray-900 min-h-screen flex flex-col pb-24">
       {/* Header */}
-      <div className="bg-gradient-to-br from-[#FF69B4] via-[#FF8CD9] to-[#E85AA9] px-6 pt-12 pb-6">
+      <div className="bg-gradient-to-br from-[#FFC0CB] via-[#FFD1DC] to-[#FFB6C1] px-6 pt-12 pb-6">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
             <Sparkles className="w-6 h-6 text-white" />
@@ -123,7 +123,7 @@ export function AIAssistant() {
             >
               <div className={`flex gap-3 max-w-[85%] ${message.type === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
                 {message.type === 'ai' && (
-                  <div className="w-8 h-8 bg-[#FF69B4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 bg-[#FFC0CB] rounded-full flex items-center justify-center flex-shrink-0">
                     <Sparkles className="w-4 h-4 text-white" />
                   </div>
                 )}
@@ -131,7 +131,7 @@ export function AIAssistant() {
                   <div
                     className={`rounded-2xl px-4 py-3 ${
                       message.type === 'user'
-                        ? 'bg-[#FF69B4] text-white'
+                        ? 'bg-[#FFC0CB] text-white'
                         : 'bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 text-slate-900 dark:text-white'
                     }`}
                   >
@@ -155,21 +155,21 @@ export function AIAssistant() {
           <div className="grid grid-cols-3 gap-2">
             <Card className="border-slate-200 dark:border-gray-700 dark:bg-gray-800">
               <CardContent className="p-3 text-center">
-                <Heart className="w-5 h-5 text-[#FF69B4] mx-auto mb-1" />
+                <Heart className="w-5 h-5 text-[#FFC0CB] mx-auto mb-1" />
                 <p className="text-xs text-slate-600 dark:text-gray-400">Heart Rate</p>
                 <p className="text-sm text-slate-900 dark:text-white">72 bpm</p>
               </CardContent>
             </Card>
             <Card className="border-slate-200 dark:border-gray-700 dark:bg-gray-800">
               <CardContent className="p-3 text-center">
-                <Droplet className="w-5 h-5 text-[#FF69B4] mx-auto mb-1" />
+                <Droplet className="w-5 h-5 text-[#FFC0CB] mx-auto mb-1" />
                 <p className="text-xs text-slate-600 dark:text-gray-400">SpO₂</p>
                 <p className="text-sm text-slate-900 dark:text-white">98%</p>
               </CardContent>
             </Card>
             <Card className="border-slate-200 dark:border-gray-700 dark:bg-gray-800">
               <CardContent className="p-3 text-center">
-                <TrendingUp className="w-5 h-5 text-[#FF69B4] mx-auto mb-1" />
+                <TrendingUp className="w-5 h-5 text-[#FFC0CB] mx-auto mb-1" />
                 <p className="text-xs text-slate-600 dark:text-gray-400">BP</p>
                 <p className="text-sm text-slate-900 dark:text-white">118/76</p>
               </CardContent>
@@ -187,9 +187,9 @@ export function AIAssistant() {
               <button
                 key={index}
                 onClick={() => handleSend(question)}
-                className="w-full text-left p-3 bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 rounded-xl text-sm text-slate-700 dark:text-gray-300 hover:border-[#FF69B4] hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors"
+                className="w-full text-left p-3 bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 rounded-xl text-sm text-slate-700 dark:text-gray-300 hover:border-[#FFC0CB] hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors"
               >
-                <MessageCircle className="w-4 h-4 inline mr-2 text-[#FF69B4]" />
+                <MessageCircle className="w-4 h-4 inline mr-2 text-[#FFC0CB]" />
                 {question}
               </button>
             ))}
@@ -210,7 +210,7 @@ export function AIAssistant() {
           <Button
             onClick={() => handleSend()}
             disabled={!inputValue.trim()}
-            className="bg-[#FF69B4] hover:bg-[#E85AA9] text-white px-6"
+            className="bg-[#FFC0CB] hover:bg-[#FFB6C1] text-white px-6"
           >
             <Send className="w-5 h-5" />
           </Button>

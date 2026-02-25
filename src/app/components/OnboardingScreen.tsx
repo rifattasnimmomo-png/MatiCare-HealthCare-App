@@ -71,7 +71,7 @@ export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
             <div
               key={s}
               className={`h-2 rounded-full transition-all ${
-                s === step ? 'w-12 bg-[#FF69B4]' : 'w-2 bg-[#FFE6F7]'
+                s === step ? 'w-12 bg-[#FFC0CB]' : 'w-2 bg-[#FFE4E9]'
               }`}
             />
           ))}
@@ -215,7 +215,7 @@ export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
             <div className="space-y-4">
               <div className="bg-pink-50 dark:bg-pink-900/20 border border-pink-200 dark:border-pink-800 rounded-xl p-6 space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-[#FF69B4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#FFC0CB] rounded-full flex items-center justify-center flex-shrink-0">
                     <Shield className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -227,7 +227,7 @@ export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-[#FF69B4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#FFC0CB] rounded-full flex items-center justify-center flex-shrink-0">
                     <Users className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -279,7 +279,7 @@ export function OnboardingScreen({ onComplete }: OnboardingScreenProps) {
         <Button
           onClick={handleNext}
           disabled={!isStepComplete()}
-          className="w-full h-14 bg-[#FF69B4] hover:bg-[#E85AA9] text-white rounded-xl"
+          className="w-full h-14 bg-[#FFC0CB] hover:bg-[#FFB6C1] text-white rounded-xl"
         >
           {step === 3 ? 'Get Started' : 'Continue'}
           <ChevronRight className="w-5 h-5 ml-2" />
