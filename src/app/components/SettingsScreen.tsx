@@ -9,7 +9,7 @@ export function SettingsScreen() {
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen pb-24">
       {/* Header */}
-      <div className="bg-[#407CE2] px-6 pt-12 pb-8">
+      <div className="bg-[#FF69B4] px-6 pt-12 pb-8">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
             <Settings className="w-8 h-8 text-white" />
@@ -26,9 +26,9 @@ export function SettingsScreen() {
         <h2 className="text-lg text-black dark:text-white mb-4">Device Connection</h2>
         <Card className="border-gray-200 dark:border-gray-700 dark:bg-gray-800">
           <CardContent className="p-5">
-            <button className="w-full flex items-center justify-between p-4 bg-[#E8F1FD] dark:bg-blue-900/30 rounded-xl hover:opacity-80 transition-opacity">
+            <button className="w-full flex items-center justify-between p-4 bg-[#FFE6F7] dark:bg-pink-900/30 rounded-xl hover:opacity-80 transition-opacity">
               <div className="flex items-center gap-3">
-                <Smartphone className="w-6 h-6 text-[#407CE2]" />
+                <Smartphone className="w-6 h-6 text-[#FF69B4]" />
                 <div className="text-left">
                   <p className="text-sm text-black dark:text-white">Connect with IoT Device</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Pair health monitoring devices</p>
@@ -40,15 +40,15 @@ export function SettingsScreen() {
             <div className="mt-4 space-y-3">
               <div className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-[#407CE2]/20 rounded-lg flex items-center justify-center">
-                    <Bluetooth className="w-5 h-5 text-[#407CE2]" />
+                  <div className="w-10 h-10 bg-[#FF69B4]/20 rounded-lg flex items-center justify-center">
+                    <Bluetooth className="w-5 h-5 text-[#FF69B4]" />
                   </div>
                   <div>
                     <p className="text-sm text-black dark:text-white">Health Monitor Band</p>
                     <p className="text-xs text-gray-600 dark:text-gray-400">Connected</p>
                   </div>
                 </div>
-                <Badge className="bg-[#407CE2] text-white text-xs border-none">Active</Badge>
+                <Badge className="bg-[#FF69B4] text-white text-xs border-none">Active</Badge>
               </div>
 
               <div className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg opacity-60">
@@ -61,7 +61,7 @@ export function SettingsScreen() {
                     <p className="text-xs text-gray-500 dark:text-gray-400">Not connected</p>
                   </div>
                 </div>
-                <button className="text-xs text-[#407CE2]">Pair</button>
+                <button className="text-xs text-[#FF69B4]">Pair</button>
               </div>
             </div>
           </CardContent>
@@ -80,13 +80,13 @@ export function SettingsScreen() {
                 onClick={() => setTheme('light')}
                 className={`w-full flex items-center justify-between p-4 rounded-xl transition-colors ${
                   theme === 'light' 
-                    ? 'bg-[#E8F1FD] dark:bg-blue-900/30 border-2 border-[#407CE2]' 
+                    ? 'bg-[#FFE6F7] dark:bg-pink-900/30 border-2 border-[#FF69B4]' 
                     : 'bg-gray-50 dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 hover:border-gray-300'
                 }`}
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-white dark:bg-gray-800 rounded-lg flex items-center justify-center">
-                    <Sun className="w-5 h-5 text-[#407CE2]" />
+                    <Sun className="w-5 h-5 text-[#FF69B4]" />
                   </div>
                   <div className="text-left">
                     <p className="text-sm text-black dark:text-white">Light Mode</p>
@@ -94,7 +94,7 @@ export function SettingsScreen() {
                   </div>
                 </div>
                 {theme === 'light' ? (
-                  <div className="w-5 h-5 bg-[#407CE2] rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-[#FF69B4] rounded-full flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full" />
                   </div>
                 ) : (
@@ -106,7 +106,7 @@ export function SettingsScreen() {
                 onClick={() => setTheme('dark')}
                 className={`w-full flex items-center justify-between p-4 rounded-xl transition-colors ${
                   theme === 'dark' 
-                    ? 'bg-[#E8F1FD] dark:bg-blue-900/30 border-2 border-[#407CE2]' 
+                    ? 'bg-[#FFE6F7] dark:bg-pink-900/30 border-2 border-[#FF69B4]' 
                     : 'bg-gray-50 dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 hover:border-gray-300'
                 }`}
               >
@@ -120,7 +120,7 @@ export function SettingsScreen() {
                   </div>
                 </div>
                 {theme === 'dark' ? (
-                  <div className="w-5 h-5 bg-[#407CE2] rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-[#FF69B4] rounded-full flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full" />
                   </div>
                 ) : (
@@ -143,7 +143,7 @@ export function SettingsScreen() {
                   <p className="text-sm text-black dark:text-white mb-1">Bluetooth</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">For device pairing</p>
                 </div>
-                <div className="w-12 h-6 bg-[#407CE2] rounded-full flex items-center justify-end px-1">
+                <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
                   <div className="w-4 h-4 bg-white rounded-full" />
                 </div>
               </div>
@@ -153,7 +153,7 @@ export function SettingsScreen() {
                   <p className="text-sm text-black dark:text-white mb-1">Wi-Fi Sync</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Automatic data backup</p>
                 </div>
-                <div className="w-12 h-6 bg-[#407CE2] rounded-full flex items-center justify-end px-1">
+                <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
                   <div className="w-4 h-4 bg-white rounded-full" />
                 </div>
               </div>
@@ -163,7 +163,7 @@ export function SettingsScreen() {
                   <p className="text-sm text-black dark:text-white mb-1">Auto-Sync</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Sync health data automatically</p>
                 </div>
-                <div className="w-12 h-6 bg-[#407CE2] rounded-full flex items-center justify-end px-1">
+                <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
                   <div className="w-4 h-4 bg-white rounded-full" />
                 </div>
               </div>

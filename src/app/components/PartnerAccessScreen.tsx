@@ -12,9 +12,9 @@ const familyImage = "https://images.unsplash.com/photo-1729863974777-1e50a94adbd
 
 export function PartnerAccessScreen({ onBack }: PartnerAccessScreenProps) {
   return (
-    <div className="bg-gradient-to-b from-blue-50 dark:from-gray-900 to-white dark:to-gray-900 min-h-screen pb-24">
+    <div className="bg-gradient-to-b from-pink-50 dark:from-gray-900 to-white dark:to-gray-900 min-h-screen pb-24">
       {/* Header */}
-      <div className="bg-gradient-to-br from-[#407CE2] via-[#5088e5] to-[#3568c4] px-6 pt-12 pb-8 rounded-b-3xl shadow-lg">
+      <div className="bg-gradient-to-br from-[#FF69B4] via-[#FF8CD9] to-[#E85AA9] px-6 pt-12 pb-8 rounded-b-3xl shadow-lg">
         <button onClick={onBack} className="flex items-center gap-2 text-white mb-6">
           <ArrowLeft className="w-5 h-5" />
           <span>Back</span>
@@ -32,13 +32,13 @@ export function PartnerAccessScreen({ onBack }: PartnerAccessScreenProps) {
 
       {/* Info Card */}
       <div className="px-6 py-6">
-        <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20">
+        <Card className="border-pink-200 dark:border-pink-800 bg-pink-50 dark:bg-pink-900/20">
           <CardContent className="p-5">
             <div className="flex items-start gap-3">
-              <Shield className="w-5 h-5 text-[#407CE2] flex-shrink-0 mt-0.5" />
+              <Shield className="w-5 h-5 text-[#FF69B4] flex-shrink-0 mt-0.5" />
               <div>
-                <h3 className="text-blue-900 dark:text-blue-100 mb-1">You control what's shared</h3>
-                <p className="text-sm text-blue-700 dark:text-blue-300 leading-relaxed">
+                <h3 className="text-pink-900 dark:text-pink-100 mb-1">You control what's shared</h3>
+                <p className="text-sm text-pink-700 dark:text-pink-300 leading-relaxed">
                   Invite your partner or family members to access specific health information. You can
                   customize permissions and revoke access at any time.
                 </p>
@@ -52,41 +52,41 @@ export function PartnerAccessScreen({ onBack }: PartnerAccessScreenProps) {
       <div className="px-6 mb-6">
         <h2 className="text-lg text-slate-900 dark:text-white mb-4">Active Connections</h2>
         
-        <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 mb-3">
+        <Card className="border-pink-200 dark:border-pink-800 bg-pink-50 dark:bg-pink-900/20 mb-3">
           <CardContent className="p-5">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-12 h-12 bg-[#407CE2] rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-[#FF69B4] rounded-full flex items-center justify-center flex-shrink-0">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center justify-between mb-1">
                   <h3 className="text-slate-900 dark:text-white">Karim Ahmed</h3>
-                  <Badge className="bg-[#407CE2] text-white text-xs">Partner</Badge>
+                  <Badge className="bg-[#FF69B4] text-white text-xs">Partner</Badge>
                 </div>
                 <p className="text-sm text-slate-600 dark:text-gray-400 mb-3">karim.ahmed@email.com</p>
-                <div className="flex items-center gap-2 text-xs text-blue-800 dark:text-blue-300">
+                <div className="flex items-center gap-2 text-xs text-pink-800 dark:text-pink-300">
                   <Check className="w-3 h-3" />
                   <span>Connected since Jan 15, 2026</span>
                 </div>
               </div>
             </div>
 
-            <div className="border-t border-blue-200 dark:border-blue-800 pt-4">
+            <div className="border-t border-pink-200 dark:border-pink-800 pt-4">
               <p className="text-sm text-slate-900 dark:text-white mb-3">Access Permissions:</p>
               <div className="space-y-2">
                 <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <Eye className="w-4 h-4 text-[#407CE2]" />
+                    <Eye className="w-4 h-4 text-[#FF69B4]" />
                     <span className="text-sm text-slate-700 dark:text-gray-300">View health vitals</span>
                   </div>
-                  <Check className="w-4 h-4 text-[#407CE2]" />
+                  <Check className="w-4 h-4 text-[#FF69B4]" />
                 </div>
                 <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <Eye className="w-4 h-4 text-[#407CE2]" />
+                    <Eye className="w-4 h-4 text-[#FF69B4]" />
                     <span className="text-sm text-slate-700 dark:text-gray-300">View appointments</span>
                   </div>
-                  <Check className="w-4 h-4 text-[#407CE2]" />
+                  <Check className="w-4 h-4 text-[#FF69B4]" />
                 </div>
                 <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
                   <div className="flex items-center gap-2">
@@ -99,7 +99,7 @@ export function PartnerAccessScreen({ onBack }: PartnerAccessScreenProps) {
             </div>
 
             <div className="flex gap-2 mt-4">
-              <Button variant="outline" className="flex-1 border-[#407CE2] text-[#407CE2] hover:bg-blue-50 dark:hover:bg-blue-900/30">
+              <Button variant="outline" className="flex-1 border-[#FF69B4] text-[#FF69B4] hover:bg-pink-50 dark:hover:bg-pink-900/30">
                 Edit Permissions
               </Button>
               <Button variant="outline" className="flex-1 border-slate-300 dark:border-gray-600 text-slate-700 dark:text-gray-300">
@@ -112,13 +112,13 @@ export function PartnerAccessScreen({ onBack }: PartnerAccessScreenProps) {
         <Card className="border-slate-200 dark:border-gray-700 dark:bg-gray-800">
           <CardContent className="p-5">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0">
-                <Users className="w-6 h-6 text-[#407CE2]" />
+              <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <Users className="w-6 h-6 text-[#FF69B4]" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center justify-between mb-1">
                   <h3 className="text-slate-900 dark:text-white">Nadia Ahmed</h3>
-                  <Badge className="bg-blue-100 dark:bg-blue-900/30 text-[#407CE2] text-xs">Family</Badge>
+                  <Badge className="bg-pink-100 dark:bg-pink-900/30 text-[#FF69B4] text-xs">Family</Badge>
                 </div>
                 <p className="text-sm text-slate-600 dark:text-gray-400 mb-3">nadia.ahmed@email.com</p>
                 <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-gray-400">
@@ -133,16 +133,16 @@ export function PartnerAccessScreen({ onBack }: PartnerAccessScreenProps) {
               <div className="space-y-2">
                 <div className="flex items-center justify-between p-2 bg-slate-50 dark:bg-gray-700 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <Bell className="w-4 h-4 text-[#407CE2]" />
+                    <Bell className="w-4 h-4 text-[#FF69B4]" />
                     <span className="text-sm text-slate-700 dark:text-gray-300">Receive critical alerts only</span>
                   </div>
-                  <Check className="w-4 h-4 text-[#407CE2]" />
+                  <Check className="w-4 h-4 text-[#FF69B4]" />
                 </div>
               </div>
             </div>
 
             <div className="flex gap-2 mt-4">
-              <Button variant="outline" className="flex-1 border-[#407CE2] text-[#407CE2] hover:bg-blue-50 dark:hover:bg-blue-900/30">
+              <Button variant="outline" className="flex-1 border-[#FF69B4] text-[#FF69B4] hover:bg-pink-50 dark:hover:bg-pink-900/30">
                 Edit Permissions
               </Button>
               <Button variant="outline" className="flex-1 border-slate-300 dark:border-gray-600 text-slate-700 dark:text-gray-300">
@@ -185,19 +185,19 @@ export function PartnerAccessScreen({ onBack }: PartnerAccessScreenProps) {
                 <label className="text-sm text-slate-700 dark:text-gray-300 mb-3 block">Default Permissions</label>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 p-3 border border-slate-200 dark:border-gray-600 dark:bg-gray-700 rounded-lg">
-                    <input type="checkbox" id="vitals" defaultChecked className="w-4 h-4 accent-[#407CE2]" />
+                    <input type="checkbox" id="vitals" defaultChecked className="w-4 h-4 accent-[#FF69B4]" />
                     <label htmlFor="vitals" className="text-sm text-slate-700 dark:text-gray-300 flex-1">
                       View health vitals & trends
                     </label>
                   </div>
                   <div className="flex items-center gap-2 p-3 border border-slate-200 dark:border-gray-600 dark:bg-gray-700 rounded-lg">
-                    <input type="checkbox" id="appointments" className="w-4 h-4 accent-[#407CE2]" />
+                    <input type="checkbox" id="appointments" className="w-4 h-4 accent-[#FF69B4]" />
                     <label htmlFor="appointments" className="text-sm text-slate-700 dark:text-gray-300 flex-1">
                       View appointments
                     </label>
                   </div>
                   <div className="flex items-center gap-2 p-3 border border-slate-200 dark:border-gray-600 dark:bg-gray-700 rounded-lg">
-                    <input type="checkbox" id="reports" className="w-4 h-4 accent-[#407CE2]" />
+                    <input type="checkbox" id="reports" className="w-4 h-4 accent-[#FF69B4]" />
                     <label htmlFor="reports" className="text-sm text-slate-700 dark:text-gray-300 flex-1">
                       Access medical reports
                     </label>
@@ -205,7 +205,7 @@ export function PartnerAccessScreen({ onBack }: PartnerAccessScreenProps) {
                 </div>
               </div>
 
-              <Button className="w-full bg-[#407CE2] hover:bg-[#3568c4] text-white h-12">
+              <Button className="w-full bg-[#FF69B4] hover:bg-[#E85AA9] text-white h-12">
                 <Mail className="w-5 h-5 mr-2" />
                 Send Invitation
               </Button>

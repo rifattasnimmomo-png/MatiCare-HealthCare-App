@@ -29,10 +29,10 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
 
       {/* Emergency Alert Info */}
       <div className="px-6 py-6">
-        <Card className="border-[#407CE2] dark:border-blue-800 bg-[#E8F1FD] dark:bg-blue-900/20">
+        <Card className="border-[#FF69B4] dark:border-pink-800 bg-[#FFE6F7] dark:bg-pink-900/20">
           <CardContent className="p-5">
             <div className="flex items-start gap-3 mb-4">
-              <AlertCircle className="w-6 h-6 text-[#407CE2] flex-shrink-0" />
+              <AlertCircle className="w-6 h-6 text-[#FF69B4] flex-shrink-0" />
               <div>
                 <h3 className="text-black dark:text-white mb-2">How Emergency Alert Works</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -40,19 +40,19 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
                 </p>
                 <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#407CE2]" />
+                    <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#FF69B4]" />
                     <span>Immediately notify all emergency contacts via automated voice call</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#407CE2]" />
+                    <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#FF69B4]" />
                     <span>Share your current location</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#407CE2]" />
+                    <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#FF69B4]" />
                     <span>Send recent vital signs summary</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#407CE2]" />
+                    <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#FF69B4]" />
                     <span>Alert your healthcare provider (if configured)</span>
                   </li>
                 </ul>
@@ -72,16 +72,16 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
       <div className="px-6 mb-6">
         <h2 className="text-lg text-slate-900 dark:text-white mb-4">Emergency Contacts</h2>
         <div className="space-y-3">
-          <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20">
+          <Card className="border-pink-200 dark:border-pink-800 bg-pink-50 dark:bg-pink-900/20">
             <CardContent className="p-5">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-[#407CE2] rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-[#FF69B4] rounded-full flex items-center justify-center flex-shrink-0">
                   <Users className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-1">
                     <h3 className="text-slate-900 dark:text-white">Karim Ahmed</h3>
-                    <Badge className="bg-[#407CE2] text-white text-xs">Primary</Badge>
+                    <Badge className="bg-[#FF69B4] text-white text-xs">Primary</Badge>
                   </div>
                   <p className="text-sm text-slate-600 dark:text-gray-400 mb-2">Spouse</p>
                   <div className="flex items-center gap-2 text-sm text-slate-700 dark:text-gray-300">
@@ -96,13 +96,13 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
           <Card className="border-slate-200 dark:border-gray-700 dark:bg-gray-800">
             <CardContent className="p-5">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Users className="w-6 h-6 text-[#407CE2]" />
+                <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Users className="w-6 h-6 text-[#FF69B4]" />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-1">
                     <h3 className="text-slate-900 dark:text-white">Dr. Fatima Rahman</h3>
-                    <Badge className="bg-blue-100 dark:bg-blue-900/30 text-[#407CE2] text-xs">Doctor</Badge>
+                    <Badge className="bg-pink-100 dark:bg-pink-900/30 text-[#FF69B4] text-xs">Doctor</Badge>
                   </div>
                   <p className="text-sm text-slate-600 dark:text-gray-400 mb-2">Obstetrician</p>
                   <div className="flex items-center gap-2 text-sm text-slate-700 dark:text-gray-300">
@@ -117,13 +117,13 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
           <Card className="border-slate-200 dark:border-gray-700 dark:bg-gray-800">
             <CardContent className="p-5">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Users className="w-6 h-6 text-[#407CE2]" />
+                <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Users className="w-6 h-6 text-[#FF69B4]" />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-1">
                     <h3 className="text-slate-900 dark:text-white">Nadia Ahmed</h3>
-                    <Badge className="bg-blue-100 dark:bg-blue-900/30 text-[#407CE2] text-xs">Family</Badge>
+                    <Badge className="bg-pink-100 dark:bg-pink-900/30 text-[#FF69B4] text-xs">Family</Badge>
                   </div>
                   <p className="text-sm text-slate-600 dark:text-gray-400 mb-2">Sister</p>
                   <div className="flex items-center gap-2 text-sm text-slate-700 dark:text-gray-300">
@@ -136,7 +136,7 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
           </Card>
         </div>
 
-        <Button className="w-full mt-4 bg-[#407CE2] hover:bg-[#3568c4] text-white h-12">
+        <Button className="w-full mt-4 bg-[#FF69B4] hover:bg-[#E85AA9] text-white h-12">
           + Add Emergency Contact
         </Button>
       </div>
@@ -162,7 +162,7 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
 
               <button className="w-full flex items-center justify-between p-4 bg-slate-50 dark:bg-gray-700 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-100 dark:hover:bg-gray-600 transition-colors">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-[#407CE2] rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[#FF69B4] rounded-full flex items-center justify-center">
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
                   <div className="text-left">
@@ -170,12 +170,12 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
                     <p className="text-sm text-slate-600 dark:text-gray-400">Dhaka Medical College</p>
                   </div>
                 </div>
-                <Phone className="w-5 h-5 text-[#407CE2]" />
+                <Phone className="w-5 h-5 text-[#FF69B4]" />
               </button>
 
               <button className="w-full flex items-center justify-between p-4 bg-slate-50 dark:bg-gray-700 border border-slate-200 dark:border-gray-600 rounded-xl hover:bg-slate-100 dark:hover:bg-gray-600 transition-colors">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-[#407CE2] rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[#FF69B4] rounded-full flex items-center justify-center">
                     <Phone className="w-5 h-5 text-white" />
                   </div>
                   <div className="text-left">
@@ -183,7 +183,7 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
                     <p className="text-sm text-slate-600 dark:text-gray-400">+880 9611-678678</p>
                   </div>
                 </div>
-                <Phone className="w-5 h-5 text-[#407CE2]" />
+                <Phone className="w-5 h-5 text-[#FF69B4]" />
               </button>
             </div>
           </CardContent>
@@ -197,18 +197,18 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
           <CardContent className="p-5">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-[#407CE2]" />
+                <MapPin className="w-5 h-5 text-[#FF69B4]" />
                 <div>
                   <p className="text-slate-900 dark:text-white">Share Location in Emergencies</p>
                   <p className="text-sm text-slate-600 dark:text-gray-400">Automatically send GPS coordinates</p>
                 </div>
               </div>
-              <div className="w-12 h-6 bg-[#407CE2] rounded-full flex items-center justify-end px-1">
+              <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
                 <div className="w-4 h-4 bg-white rounded-full" />
               </div>
             </div>
-            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
-              <p className="text-xs text-blue-800 dark:text-blue-300">
+            <div className="bg-pink-50 dark:bg-pink-900/20 border border-pink-200 dark:border-pink-800 rounded-lg p-3">
+              <p className="text-xs text-pink-800 dark:text-pink-300">
                 <CheckCircle className="w-3 h-3 inline mr-1" />
                 Location services enabled for emergency use only
               </p>
@@ -226,7 +226,7 @@ export function EmergencyScreen({ onBack }: EmergencyScreenProps) {
               Send a test notification to verify your emergency contacts receive alerts properly. This
               will be marked as a test.
             </p>
-            <Button variant="outline" className="w-full border-[#407CE2] text-[#407CE2] hover:bg-blue-50 dark:hover:bg-blue-900/30">
+            <Button variant="outline" className="w-full border-[#FF69B4] text-[#FF69B4] hover:bg-pink-50 dark:hover:bg-pink-900/30">
               <Clock className="w-5 h-5 mr-2" />
               Send Test Alert
             </Button>

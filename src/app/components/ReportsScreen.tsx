@@ -11,7 +11,7 @@ export function ReportsScreen({ onBack }: ReportsScreenProps) {
   return (
     <div className="bg-slate-50 min-h-screen pb-24">
       {/* Header */}
-      <div className="bg-gradient-to-br from-blue-500 to-indigo-500 px-6 pt-12 pb-8">
+      <div className="bg-gradient-to-br from-pink-500 to-indigo-500 px-6 pt-12 pb-8">
         <button onClick={onBack} className="flex items-center gap-2 text-white mb-6">
           <ArrowLeft className="w-5 h-5" />
           <span>Back</span>
@@ -22,20 +22,20 @@ export function ReportsScreen({ onBack }: ReportsScreenProps) {
           </div>
           <div>
             <h1 className="text-2xl text-white mb-1">Health Reports</h1>
-            <p className="text-blue-100 text-sm">Export & share with your doctor</p>
+            <p className="text-pink-100 text-sm">Export & share with your doctor</p>
           </div>
         </div>
       </div>
 
       {/* Data Ownership */}
       <div className="px-6 py-6">
-        <Card className="border-blue-200 bg-blue-50">
+        <Card className="border-pink-200 bg-pink-50">
           <CardContent className="p-5">
             <div className="flex items-start gap-3">
-              <Lock className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+              <Lock className="w-5 h-5 text-pink-600 flex-shrink-0 mt-0.5" />
               <div>
-                <h3 className="text-blue-900 mb-1">Your Data, Your Control</h3>
-                <p className="text-sm text-blue-700 leading-relaxed">
+                <h3 className="text-pink-900 mb-1">Your Data, Your Control</h3>
+                <p className="text-sm text-pink-700 leading-relaxed">
                   All reports are encrypted and can only be accessed by you. You decide what to share and with whom. Data can be exported or deleted at any time.
                 </p>
               </div>
@@ -64,8 +64,8 @@ export function ReportsScreen({ onBack }: ReportsScreenProps) {
                 <p className="text-xs text-slate-600">Avg Heart Rate (bpm)</p>
               </div>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <TrendingUp className="w-5 h-5 text-blue-600 mb-2" />
+              <div className="bg-pink-50 border border-pink-200 rounded-lg p-4">
+                <TrendingUp className="w-5 h-5 text-pink-600 mb-2" />
                 <p className="text-2xl text-slate-900 mb-1">117/75</p>
                 <p className="text-xs text-slate-600">Avg Blood Pressure</p>
               </div>
@@ -91,11 +91,11 @@ export function ReportsScreen({ onBack }: ReportsScreenProps) {
             </div>
 
             <div className="flex gap-2">
-              <Button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white">
+              <Button className="flex-1 bg-pink-500 hover:bg-pink-600 text-white">
                 <Download className="w-4 h-4 mr-2" />
                 Download PDF
               </Button>
-              <Button variant="outline" className="flex-1 border-blue-300 text-blue-700">
+              <Button variant="outline" className="flex-1 border-pink-300 text-pink-700">
                 <Share2 className="w-4 h-4 mr-2" />
                 Share
               </Button>
@@ -111,8 +111,8 @@ export function ReportsScreen({ onBack }: ReportsScreenProps) {
           <Card className="border-slate-200">
             <CardContent className="p-4">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FileText className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-6 h-6 text-pink-600" />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-1">
@@ -130,8 +130,8 @@ export function ReportsScreen({ onBack }: ReportsScreenProps) {
           <Card className="border-slate-200">
             <CardContent className="p-4">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FileText className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-6 h-6 text-pink-600" />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-1">
@@ -149,8 +149,8 @@ export function ReportsScreen({ onBack }: ReportsScreenProps) {
           <Card className="border-slate-200">
             <CardContent className="p-4">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FileText className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-6 h-6 text-pink-600" />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-1">

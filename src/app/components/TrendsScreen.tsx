@@ -47,7 +47,7 @@ export function TrendsScreen() {
   const vitalConfig = {
     hr: {
       label: 'Heart Rate',
-      icon: <Heart className="w-5 h-5 text-[#407CE2]" />,
+      icon: <Heart className="w-5 h-5 text-[#FF69B4]" />,
       color: '#f43f5e',
       data: heartRateData,
       unit: 'bpm',
@@ -55,7 +55,7 @@ export function TrendsScreen() {
     },
     spo2: {
       label: 'Blood Oxygen',
-      icon: <Droplet className="w-5 h-5 text-[#407CE2]" />,
+      icon: <Droplet className="w-5 h-5 text-[#FF69B4]" />,
       color: '#3b82f6',
       data: spo2Data,
       unit: '%',
@@ -63,7 +63,7 @@ export function TrendsScreen() {
     },
     temp: {
       label: 'Body Temperature',
-      icon: <Thermometer className="w-5 h-5 text-[#407CE2]" />,
+      icon: <Thermometer className="w-5 h-5 text-[#FF69B4]" />,
       color: '#f97316',
       data: tempData,
       unit: '°C',
@@ -71,7 +71,7 @@ export function TrendsScreen() {
     },
     bp: {
       label: 'Blood Pressure (Systolic)',
-      icon: <TrendingUp className="w-5 h-5 text-[#407CE2]" />,
+      icon: <TrendingUp className="w-5 h-5 text-[#FF69B4]" />,
       color: '#a855f7',
       data: bpSystolicData,
       unit: 'mmHg',
@@ -94,19 +94,19 @@ export function TrendsScreen() {
         <Tabs value={selectedVital} onValueChange={(v) => setSelectedVital(v as any)}>
           <TabsList className="w-full grid grid-cols-4 h-auto bg-gray-100 dark:bg-gray-800 p-1 rounded-xl">
             <TabsTrigger value="hr" className="flex flex-col items-center py-3 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:rounded-lg">
-              <Heart className="w-5 h-5 mb-1 text-[#407CE2]" />
+              <Heart className="w-5 h-5 mb-1 text-[#FF69B4]" />
               <span className="text-xs dark:text-gray-300">Heart</span>
             </TabsTrigger>
             <TabsTrigger value="spo2" className="flex flex-col items-center py-3 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:rounded-lg">
-              <Droplet className="w-5 h-5 mb-1 text-[#407CE2]" />
+              <Droplet className="w-5 h-5 mb-1 text-[#FF69B4]" />
               <span className="text-xs dark:text-gray-300">SpO₂</span>
             </TabsTrigger>
             <TabsTrigger value="temp" className="flex flex-col items-center py-3 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:rounded-lg">
-              <Thermometer className="w-5 h-5 mb-1 text-[#407CE2]" />
+              <Thermometer className="w-5 h-5 mb-1 text-[#FF69B4]" />
               <span className="text-xs dark:text-gray-300">Temp</span>
             </TabsTrigger>
             <TabsTrigger value="bp" className="flex flex-col items-center py-3 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 data-[state=active]:rounded-lg">
-              <TrendingUp className="w-5 h-5 mb-1 text-[#407CE2]" />
+              <TrendingUp className="w-5 h-5 mb-1 text-[#FF69B4]" />
               <span className="text-xs dark:text-gray-300">BP</span>
             </TabsTrigger>
           </TabsList>
@@ -125,7 +125,7 @@ export function TrendsScreen() {
                   <p className="text-xs text-gray-500 dark:text-gray-400">{currentVital.range}</p>
                 </div>
               </div>
-              <Badge className="bg-[#407CE2] text-white border-none">Last 7 days</Badge>
+              <Badge className="bg-[#FF69B4] text-white border-none">Last 7 days</Badge>
             </div>
 
             <div className="h-64">
@@ -179,8 +179,8 @@ export function TrendsScreen() {
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Trend</p>
                 <div className="flex items-center gap-1">
-                  <span className="text-[#407CE2]">↓</span>
-                  <span className="text-[#407CE2] font-medium">Stable</span>
+                  <span className="text-[#FF69B4]">↓</span>
+                  <span className="text-[#FF69B4] font-medium">Stable</span>
                 </div>
               </div>
             </div>
@@ -190,10 +190,10 @@ export function TrendsScreen() {
 
       {/* AI Insights */}
       <div className="px-6 mb-6">
-        <Card className="border-none bg-[#E8F1FD] dark:bg-blue-900/20 shadow-sm">
+        <Card className="border-none bg-[#FFE6F7] dark:bg-pink-900/20 shadow-sm">
           <CardContent className="p-5">
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#407CE2] rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#FF69B4] rounded-full flex items-center justify-center flex-shrink-0">
                 <Info className="w-5 h-5 text-white" />
               </div>
               <div>
@@ -218,7 +218,7 @@ export function TrendsScreen() {
         <Card className="border-gray-200 dark:border-gray-700 dark:bg-gray-800 shadow-sm">
           <CardContent className="p-5">
             <div className="flex items-center gap-3 mb-4">
-              <Calendar className="w-5 h-5 text-[#407CE2]" />
+              <Calendar className="w-5 h-5 text-[#FF69B4]" />
               <div>
                 <p className="text-gray-900 dark:text-white font-medium">Week 18 of 40</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">Second Trimester</p>
@@ -226,8 +226,8 @@ export function TrendsScreen() {
             </div>
 
             <div className="space-y-4">
-              <div className="relative pl-6 pb-4 border-l-2 border-[#407CE2]">
-                <div className="absolute -left-[9px] top-0 w-4 h-4 bg-[#407CE2] rounded-full border-4 border-white dark:border-gray-800 shadow-sm" />
+              <div className="relative pl-6 pb-4 border-l-2 border-[#FF69B4]">
+                <div className="absolute -left-[9px] top-0 w-4 h-4 bg-[#FF69B4] rounded-full border-4 border-white dark:border-gray-800 shadow-sm" />
                 <p className="text-sm text-gray-900 dark:text-white font-medium mb-1">Current Week</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400">
                   Baby's hearing is developing. Size: approximately 14cm (like a bell pepper)

@@ -74,7 +74,7 @@ export function PrivacySettingsScreen({ onBack }: PrivacySettingsScreenProps) {
 
               <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <Database className="w-5 h-5 text-blue-500" />
+                  <Database className="w-5 h-5 text-pink-500" />
                   <div>
                     <p className="text-sm text-slate-900">Secure Cloud Storage</p>
                     <p className="text-xs text-slate-600">Data stored in encrypted servers</p>
@@ -201,7 +201,7 @@ export function PrivacySettingsScreen({ onBack }: PrivacySettingsScreenProps) {
             <div className="space-y-4">
               <button className="w-full flex items-center justify-between p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
                 <div className="flex items-center gap-3">
-                  <Database className="w-5 h-5 text-blue-500" />
+                  <Database className="w-5 h-5 text-pink-500" />
                   <div className="text-left">
                     <p className="text-sm text-slate-900">Export All Data</p>
                     <p className="text-xs text-slate-600">Download complete health archive</p>

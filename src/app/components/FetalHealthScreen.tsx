@@ -11,7 +11,7 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen pb-24">
       {/* Header */}
-      <div className="bg-[#407CE2] px-6 pt-12 pb-8 rounded-b-[32px]">
+      <div className="bg-[#FF69B4] px-6 pt-12 pb-8 rounded-b-[32px]">
         <button
           onClick={onBack}
           className="flex items-center gap-2 text-white mb-6"
@@ -32,12 +32,12 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
 
       {/* Research Badge */}
       <div className="px-6 py-6">
-        <Card className="border-none bg-[#E8F1FD] dark:bg-blue-900/30 shadow-sm">
+        <Card className="border-none bg-[#FFE6F7] dark:bg-pink-900/30 shadow-sm">
           <CardContent className="p-4">
             <div className="flex items-start gap-3">
-              <Info className="w-5 h-5 text-[#407CE2] flex-shrink-0 mt-0.5" />
+              <Info className="w-5 h-5 text-[#FF69B4] flex-shrink-0 mt-0.5" />
               <div>
-                <Badge className="bg-[#407CE2] text-white text-xs mb-2 border-none">Phase 2 Feature</Badge>
+                <Badge className="bg-[#FF69B4] text-white text-xs mb-2 border-none">Phase 2 Feature</Badge>
                 <p className="text-sm text-gray-900 dark:text-gray-100 leading-relaxed">
                   This feature is under clinical validation and research. It provides awareness tools but
                   is <strong>not a diagnostic device</strong>. Always follow your healthcare provider's
@@ -59,14 +59,14 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Movements detected</p>
                 <p className="text-4xl text-gray-900 dark:text-white font-semibold">8</p>
               </div>
-              <div className="w-20 h-20 bg-[#E8F1FD] dark:bg-blue-900/30 rounded-full flex items-center justify-center">
-                <Activity className="w-10 h-10 text-[#407CE2]" />
+              <div className="w-20 h-20 bg-[#FFE6F7] dark:bg-pink-900/30 rounded-full flex items-center justify-center">
+                <Activity className="w-10 h-10 text-[#FF69B4]" />
               </div>
             </div>
 
-            <div className="bg-[#407CE2]/10 border border-[#407CE2] dark:border-blue-700 rounded-xl p-4 mb-4">
+            <div className="bg-[#FF69B4]/10 border border-[#FF69B4] dark:border-pink-700 rounded-xl p-4 mb-4">
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-2 h-2 bg-[#407CE2] rounded-full" />
+                <div className="w-2 h-2 bg-[#FF69B4] rounded-full" />
                 <p className="text-sm text-gray-900 dark:text-white font-medium">Active today</p>
               </div>
               <p className="text-xs text-gray-700 dark:text-gray-300">
@@ -89,7 +89,7 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
               </div>
             </div>
 
-            <Button className="w-full mt-6 bg-[#407CE2] hover:bg-[#3568c4] text-white">
+            <Button className="w-full mt-6 bg-[#FF69B4] hover:bg-[#E85AA9] text-white">
               Log Movement
             </Button>
           </CardContent>
@@ -102,7 +102,7 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
         <Card className="border-gray-200 dark:border-gray-700 dark:bg-gray-800 shadow-sm">
           <CardContent className="p-6">
             <div className="flex items-center gap-3 mb-4">
-              <TrendingUp className="w-5 h-5 text-[#407CE2]" />
+              <TrendingUp className="w-5 h-5 text-[#FF69B4]" />
               <div>
                 <p className="text-sm text-gray-900 dark:text-white font-medium">Activity increasing</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400">Baby is more active this week</p>
@@ -121,12 +121,12 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
                 { day: 'Today', count: 8, percent: 67, active: true },
               ].map((item) => (
                 <div key={item.day} className="flex items-center gap-3">
-                  <p className={`text-xs w-12 ${item.active ? 'text-[#407CE2] font-semibold' : 'text-gray-600 dark:text-gray-400'}`}>
+                  <p className={`text-xs w-12 ${item.active ? 'text-[#FF69B4] font-semibold' : 'text-gray-600 dark:text-gray-400'}`}>
                     {item.day}
                   </p>
                   <div className="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                     <div
-                      className={`h-2 rounded-full ${item.active ? 'bg-[#407CE2]' : 'bg-blue-400 dark:bg-blue-600'}`}
+                      className={`h-2 rounded-full ${item.active ? 'bg-[#FF69B4]' : 'bg-pink-400 dark:bg-pink-600'}`}
                       style={{ width: `${item.percent}%` }}
                     />
                   </div>
@@ -145,7 +145,7 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
           <Card className="border-gray-200 dark:border-gray-700 dark:bg-gray-800 shadow-sm">
             <CardContent className="p-5">
               <h3 className="text-gray-900 dark:text-white font-medium mb-2 flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-[#407CE2]" />
+                <Calendar className="w-5 h-5 text-[#FF69B4]" />
                 Week 18
               </h3>
               <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -160,15 +160,15 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
               <h3 className="text-gray-900 dark:text-white font-medium mb-2">What's Normal?</h3>
               <ul className="space-y-2">
                 <li className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 bg-[#407CE2] rounded-full mt-1.5 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 bg-[#FF69B4] rounded-full mt-1.5 flex-shrink-0" />
                   Movements can vary throughout the day
                 </li>
                 <li className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 bg-[#407CE2] rounded-full mt-1.5 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 bg-[#FF69B4] rounded-full mt-1.5 flex-shrink-0" />
                   Baby may be more active after meals
                 </li>
                 <li className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 bg-[#407CE2] rounded-full mt-1.5 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 bg-[#FF69B4] rounded-full mt-1.5 flex-shrink-0" />
                   Reduced movement during sleep cycles
                 </li>
               </ul>
@@ -206,10 +206,10 @@ export function FetalHealthScreen({ onBack }: FetalHealthScreenProps) {
           <CardContent className="p-5">
             <h3 className="text-gray-900 dark:text-white font-semibold mb-4">Quick Actions</h3>
             <div className="space-y-3">
-              <Button className="w-full bg-[#407CE2] hover:bg-[#3568c4] text-white">
+              <Button className="w-full bg-[#FF69B4] hover:bg-[#E85AA9] text-white">
                 Start Kick Count Session
               </Button>
-              <Button variant="outline" className="w-full border-[#407CE2] text-[#407CE2] hover:bg-[#E8F1FD] dark:hover:bg-blue-900/30">
+              <Button variant="outline" className="w-full border-[#FF69B4] text-[#FF69B4] hover:bg-[#FFE6F7] dark:hover:bg-pink-900/30">
                 View Movement History
               </Button>
               <Button variant="outline" className="w-full border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700">

@@ -209,14 +209,14 @@ function AppContent({
     return (
       <div className="size-full bg-gray-50 dark:bg-gray-900">
         <div className="px-6 pt-12 pb-24">
-          <div className="bg-[#407CE2] px-6 pt-12 pb-8 rounded-[32px] mb-6">
+          <div className="bg-[#FF69B4] px-6 pt-12 pb-8 rounded-[32px] mb-6">
             <h1 className="text-white text-2xl font-medium mb-2">Help Centre</h1>
             <p className="text-white/80 text-sm">Support & FAQs</p>
           </div>
           <p className="text-gray-600 dark:text-gray-400">Help documentation coming soon...</p>
           <button
             onClick={() => setActiveScreen(null)}
-            className="mt-6 px-6 py-3 bg-[#407CE2] text-white rounded-xl hover:bg-[#3568c4]"
+            className="mt-6 px-6 py-3 bg-[#FF69B4] text-white rounded-xl hover:bg-[#E85AA9]"
           >
             Go Back
           </button>
@@ -231,7 +231,7 @@ function AppContent({
     return (
       <div className="size-full bg-gray-50 dark:bg-gray-900">
         <div className="px-6 pt-12 pb-24">
-          <div className="bg-[#407CE2] px-6 pt-12 pb-8 rounded-[32px] mb-6">
+          <div className="bg-[#FF69B4] px-6 pt-12 pb-8 rounded-[32px] mb-6">
             <h1 className="text-white text-2xl font-medium mb-2">About MatriCare</h1>
             <p className="text-white/80 text-sm">Version & Information</p>
           </div>
@@ -242,7 +242,7 @@ function AppContent({
           </p>
           <button
             onClick={() => setActiveScreen(null)}
-            className="mt-6 px-6 py-3 bg-[#407CE2] text-white rounded-xl hover:bg-[#3568c4]"
+            className="mt-6 px-6 py-3 bg-[#FF69B4] text-white rounded-xl hover:bg-[#E85AA9]"
           >
             Go Back
           </button>

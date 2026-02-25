@@ -37,11 +37,11 @@ export function AppointmentsScreen({ onBack }: AppointmentsScreenProps) {
               <p className="text-xs text-emerald-700">Upcoming</p>
             </CardContent>
           </Card>
-          <Card className="border-blue-200 bg-blue-50">
+          <Card className="border-pink-200 bg-pink-50">
             <CardContent className="p-4 text-center">
-              <CheckCircle className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-              <p className="text-2xl text-blue-900 mb-1">4</p>
-              <p className="text-xs text-blue-700">Completed</p>
+              <CheckCircle className="w-8 h-8 text-pink-600 mx-auto mb-2" />
+              <p className="text-2xl text-pink-900 mb-1">4</p>
+              <p className="text-xs text-pink-700">Completed</p>
             </CardContent>
           </Card>
         </div>
@@ -194,18 +194,18 @@ export function AppointmentsScreen({ onBack }: AppointmentsScreenProps) {
       {/* Recommended Schedule */}
       <div className="px-6 mb-6">
         <h2 className="text-lg text-slate-900 mb-4">Recommended Schedule</h2>
-        <Card className="border-blue-200 bg-blue-50">
+        <Card className="border-pink-200 bg-pink-50">
           <CardContent className="p-5">
             <h3 className="text-slate-900 mb-3">Second Trimester Timeline</h3>
             <div className="space-y-3">
-              <div className="flex items-start gap-3 pb-3 border-b border-blue-200">
+              <div className="flex items-start gap-3 pb-3 border-b border-pink-200">
                 <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-slate-900">Week 18-20: Anatomy Scan ✓</p>
                   <p className="text-xs text-slate-600">Upcoming on Feb 7</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 pb-3 border-b border-blue-200">
+              <div className="flex items-start gap-3 pb-3 border-b border-pink-200">
                 <div className="w-2 h-2 bg-slate-300 rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-slate-700">Week 24-28: Glucose Screening</p>

@@ -15,18 +15,18 @@ interface AlertCardProps {
 function AlertCard({ severity, title, message, time, action, onDismiss }: AlertCardProps) {
   const severityConfig = {
     info: {
-      bg: 'bg-blue-50 dark:bg-blue-900/20',
-      border: 'border-blue-200 dark:border-blue-800',
+      bg: 'bg-pink-50 dark:bg-pink-900/20',
+      border: 'border-pink-200 dark:border-pink-800',
       icon: <Info className="w-5 h-5 text-white" />,
-      iconBg: 'bg-[#407CE2]',
-      badge: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300',
+      iconBg: 'bg-[#FF69B4]',
+      badge: 'bg-pink-100 text-pink-700 dark:bg-pink-900 dark:text-pink-300',
       badgeText: 'Info',
     },
     monitor: {
       bg: 'bg-amber-50 dark:bg-amber-900/20',
       border: 'border-amber-200 dark:border-amber-800',
       icon: <Bell className="w-5 h-5 text-white" />,
-      iconBg: 'bg-[#407CE2]',
+      iconBg: 'bg-[#FF69B4]',
       badge: 'bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300',
       badgeText: 'Monitor',
     },
@@ -34,7 +34,7 @@ function AlertCard({ severity, title, message, time, action, onDismiss }: AlertC
       bg: 'bg-orange-50 dark:bg-orange-900/20',
       border: 'border-orange-200 dark:border-orange-800',
       icon: <AlertCircle className="w-5 h-5 text-white" />,
-      iconBg: 'bg-[#407CE2]',
+      iconBg: 'bg-[#FF69B4]',
       badge: 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300',
       badgeText: 'Attention',
     },
@@ -42,7 +42,7 @@ function AlertCard({ severity, title, message, time, action, onDismiss }: AlertC
       bg: 'bg-rose-50 dark:bg-rose-900/20',
       border: 'border-rose-200 dark:border-rose-800',
       icon: <PhoneCall className="w-5 h-5 text-white" />,
-      iconBg: 'bg-[#407CE2]',
+      iconBg: 'bg-[#FF69B4]',
       badge: 'bg-rose-100 text-rose-700 dark:bg-rose-900 dark:text-rose-300',
       badgeText: 'Emergency',
     },
@@ -80,7 +80,7 @@ function AlertCard({ severity, title, message, time, action, onDismiss }: AlertC
             {action && (
               <Button
                 size="sm"
-                className={`mt-3 ${severity === 'emergency' ? 'bg-rose-600 hover:bg-rose-700' : 'bg-[#407CE2] hover:bg-[#3568c4]'} text-white`}
+                className={`mt-3 ${severity === 'emergency' ? 'bg-rose-600 hover:bg-rose-700' : 'bg-[#FF69B4] hover:bg-[#E85AA9]'} text-white`}
               >
                 {action}
               </Button>
@@ -97,7 +97,7 @@ export function AlertsScreen() {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen pb-24">
       {/* Header */}
-      <div className="bg-[#407CE2] px-6 pt-12 pb-6 rounded-b-[32px]">
+      <div className="bg-[#FF69B4] px-6 pt-12 pb-6 rounded-b-[32px]">
         <div className="flex items-center justify-between mb-2">
           <h1 className="text-white text-2xl font-medium">Alerts & Notifications</h1>
           <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
@@ -112,7 +112,7 @@ export function AlertsScreen() {
         <div className="grid grid-cols-2 gap-4 mb-6">
           <Card className="border-none bg-white dark:bg-gray-800 shadow-md">
             <CardContent className="p-4 text-center">
-              <div className="w-10 h-10 bg-[#407CE2] rounded-full flex items-center justify-center mx-auto mb-2">
+              <div className="w-10 h-10 bg-[#FF69B4] rounded-full flex items-center justify-center mx-auto mb-2">
                 <CheckCircle className="w-5 h-5 text-white" />
               </div>
               <p className="text-2xl text-gray-900 dark:text-white font-semibold mb-1">3</p>
@@ -122,7 +122,7 @@ export function AlertsScreen() {
 
           <Card className="border-none bg-white dark:bg-gray-800 shadow-md">
             <CardContent className="p-4 text-center">
-              <div className="w-10 h-10 bg-[#407CE2] rounded-full flex items-center justify-center mx-auto mb-2">
+              <div className="w-10 h-10 bg-[#FF69B4] rounded-full flex items-center justify-center mx-auto mb-2">
                 <Bell className="w-5 h-5 text-white" />
               </div>
               <p className="text-2xl text-gray-900 dark:text-white font-semibold mb-1">2</p>
@@ -177,13 +177,13 @@ export function AlertsScreen() {
             <Card className="border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm opacity-75">
               <CardContent className="p-5">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#407CE2] to-[#3568c4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-full flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="text-gray-700 dark:text-gray-300 font-medium">Preeclampsia Risk</h3>
-                      <Badge className="bg-[#407CE2] text-white text-xs border-none">Resolved</Badge>
+                      <Badge className="bg-[#FF69B4] text-white text-xs border-none">Resolved</Badge>
                     </div>
                     <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-1">
                       Elevated blood pressure detected (142/88). Resolved with medication and rest.
@@ -197,13 +197,13 @@ export function AlertsScreen() {
             <Card className="border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm opacity-75">
               <CardContent className="p-5">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#407CE2] to-[#3568c4] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FF69B4] to-[#E85AA9] rounded-full flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="text-gray-700 dark:text-gray-300 font-medium">Hypoxia</h3>
-                      <Badge className="bg-[#407CE2] text-white text-xs border-none">Resolved</Badge>
+                      <Badge className="bg-[#FF69B4] text-white text-xs border-none">Resolved</Badge>
                     </div>
                     <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-1">
                       Low blood oxygen levels (SpO₂ 92%). Resolved with improved ventilation and rest.
@@ -219,10 +219,10 @@ export function AlertsScreen() {
 
       {/* Emergency Info */}
       <div className="px-6 mt-6">
-        <Card className="border-none shadow-md bg-gradient-to-br from-[#E8F1FD] dark:from-blue-900/30 to-white dark:to-gray-800">
+        <Card className="border-none shadow-md bg-gradient-to-br from-[#FFE6F7] dark:from-pink-900/30 to-white dark:to-gray-800">
           <CardContent className="p-5">
             <div className="flex items-start gap-3">
-              <PhoneCall className="w-5 h-5 text-[#407CE2] flex-shrink-0 mt-0.5" />
+              <PhoneCall className="w-5 h-5 text-[#FF69B4] flex-shrink-0 mt-0.5" />
               <div>
                 <h3 className="text-gray-900 dark:text-white font-semibold mb-1">Emergency Alert Protocol</h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
@@ -248,7 +248,7 @@ export function AlertsScreen() {
                   <p className="text-sm text-gray-900 dark:text-white font-medium">Critical Health Alerts</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Always enabled for your safety</p>
                 </div>
-                <div className="w-12 h-6 bg-[#407CE2] rounded-full flex items-center justify-end px-1">
+                <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
                   <div className="w-4 h-4 bg-white rounded-full shadow-sm" />
                 </div>
               </div>
@@ -258,7 +258,7 @@ export function AlertsScreen() {
                   <p className="text-sm text-gray-900 dark:text-white font-medium">Daily Reminders</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Medication & hydration reminders</p>
                 </div>
-                <div className="w-12 h-6 bg-[#407CE2] rounded-full flex items-center justify-end px-1">
+                <div className="w-12 h-6 bg-[#FF69B4] rounded-full flex items-center justify-end px-1">
                   <div className="w-4 h-4 bg-white rounded-full shadow-sm" />
                 </div>
               </div>
