@@ -28,7 +28,7 @@ export function HomeDashboard({ onNavigate, userName, pregnancyWeek }: HomeDashb
   const progressBarWidth = `${progressPercentage}%`;
 
   return (
-    <div className="bg-white dark:bg-gray-900 relative size-full overflow-auto pb-24" data-name="Matri Care">
+    <div className="bg-white dark:bg-gray-900 relative w-full min-h-[1200px] overflow-auto pb-24" data-name="Matri Care">
       <div className="absolute bg-[#407CE2] h-[380px] left-0 rounded-[34px] top-[-100px] w-full" />
       
       <StatusBar />
