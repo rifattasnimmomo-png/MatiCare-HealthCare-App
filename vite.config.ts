@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   // Set base path for GitHub Pages deployment
   // Change 'matricare-app' to match your GitHub repository name
-  base: '/matricare-app/',
+  base: '/MatiCare-HealthCare-App/',
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
